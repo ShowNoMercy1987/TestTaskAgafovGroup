@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>TestTask</title>
+  </head>
+  <body>
+    <div class="bodyWrapper">
+      <div class="mainWrapper">
+        <article class="article">
+          <header class="header">
+            <img
+              class="header__logo"
+              src="./src/img/Rectangle.png"
+              alt="Неизвестная картинка логотип?"
+            />
+
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__menuButton" id="header-button">
+                  <div class="header__button" id="header-icon">
+                    <div class="header__button-icon">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <span>меню</span>
+                </li>
+                <li><span>портфолио</span></li>
+                <li><span>цены</span></li>
+                <li><span>схема работы</span></li>
+                <li><span>отзывы</span></li>
+                <li><span>контакты</span></li>
+                <li><span>гарнтия</span></li>
+              </ul>
+              <div class="header__menuModal" id="header-modal">
+                <a href="#" class="header__menuModal_span">услуги</a>
+                <a href="#" class="header__menuModal_span">статьи</a>
+                <a href="#" class="header__menuModal_span">вакансии</a>
+                <a href="#" class="header__menuModal_span">франшиза</a>
+              </div>
+            </nav>
+
+            <button class="header__btn">обратный звонок</button>
+          </header>
+
+          <section class="mainSection">
+            <div class="mainSection__wrapper">
+              <div class="mainSection-left" id="left-section">
+                <p class="mainSection__title">
+                  Ремонт под ключ от 2900 руб/м².
+                </p>
+                <p class="mainSection__present">
+                  При заказе ремонта делаем дизайн-проект в подарок
+                </p>
+                <p class="mainSection__br" />
+                <div class="mainSection__group">
+                  <div class="mainSection__truckWrapper">
+                    <img
+                      class="mainSection__groupTruck"
+                      src="./src/img/icons8-checked_truck.png"
+                      alt="иконка"
+                    />
+                    <span class="mainSection__groupText"
+                      >Бесплатный выезд в день обращения</span
+                    >
+                  </div>
+                  <div class="mainSection__guaranteeWrapper">
+                    <img
+                      class="mainSection__guarantee"
+                      src="./src/img/icons8-guarantee.png"
+                      alt="иконка"
+                    />
+                    <span class="mainSection__groupText"
+                      >Гарантия на работу до 5 лет</span
+                    >
+                  </div>
+                  <div class="mainSection__managmentWrapper">
+                    <img
+                      class="mainSection__managment"
+                      src="./src/img/icons8-time_management.png"
+                      alt="иконка"
+                    />
+                    <span class="mainSection__groupText"
+                      >Жесткое соблюдение сроков</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="mainSection__priceWrapper" id="price">
+                <form class="mainSection__form">
+                  <p class="mainSection__priceTitle">
+                    Рассчитайте стоимость ремонта
+                  </p>
+
+                  <p class="mainSection__houseTitle">площадь квартиры:</p>
+
+                  <p class="mainSection__space">
+                    <output for="fader" id="count">68м²</output>
+                  </p>
+
+                  <input
+                    class="range"
+                    type="range"
+                    id="fader"
+                    min="0"
+                    max="100"
+                    value="68"
+                    step="1"
+                    oninput="range()"
+                  />
+
+                  <p class="mainSection__subTitle1">тип жилья:</p>
+
+                  <div class="mainSection__checkbox1">
+                    <img
+                      src="./src/img/icons8-unchecked_circle-copy-3.png"
+                      alt="чекбос-маркер"
+                    />
+                    <p class="mainSection__checkboxText">Вторичное жилье</p>
+                  </div>
+
+                  <div class="mainSection__checkbox2">
+                    <img
+                      src="./src/img/icons8-unchecked_circle-copy-3.png"
+                      alt="чекбос-маркер"
+                    />
+                    <p class="mainSection__checkboxText">Новостройка</p>
+                  </div>
+
+                  <div class="mainSection__checkbox3">
+                    <img
+                      src="./src/img/icons8-unchecked_circle-copy-3.png"
+                      alt="чекбос-маркер"
+                    />
+                    <p class="mainSection__checkboxText">Офис</p>
+                  </div>
+                  <p class="mainSection__subTitle2">кол-во комнат:</p>
+
+                  <div class="mainSection__checkbox4">
+                    <img
+                      src="./src/img/icons8-unchecked_circle-copy-3.png"
+                      alt="чекбос-маркер"
+                    />
+                    <p class="mainSection__checkboxText">1</p>
+                  </div>
+
+                  <div class="mainSection__checkbox5">
+                    <img
+                      src="./src/img/icons8-unchecked_circle-copy-3.png"
+                      alt="чекбос-маркер"
+                    />
+                    <p class="mainSection__checkboxText">2</p>
+                  </div>
+
+                  <div class="mainSection__checkbox6">
+                    <img
+                      src="./src/img/icons8-unchecked_circle-copy-3.png"
+                      alt="чекбос-маркер"
+                    />
+                    <p class="mainSection__checkboxText">3+</p>
+                  </div>
+
+                  <div class="mainSection__checkbox7">
+                    <img
+                      src="./src/img/icons8-unchecked_circle-copy-3.png"
+                      alt="чекбос-маркер"
+                    />
+                    <p class="mainSection__checkboxText">студия</p>
+                  </div>
+                  <button type="submit" class="mainSection__formBtn">
+                    Отправить
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
+
+          <div class="scroll">
+            <img src="./src/img/Shape.png" alt="иконка-прокрутки" />
+            <p class="scroll__text">scroll</p>
+          </div>
+        </article>
+
+        <img
+          class="mainImg"
+          src="./src/img/Rectangle2.png"
+          alt="изображение интерьера"
+          id="back-img"
+        />
+      </div>
+    </div>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
